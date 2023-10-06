@@ -64,7 +64,7 @@ def translate_codons(codons: list[str]) -> list[str]:
     >>> translate_codons(["acg", "ac", "gca"]) is None
     True
 
-    """
+    """ 
     # FIXME: Implement the function
     y=[]
     output=[]
