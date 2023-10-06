@@ -41,8 +41,7 @@ def split_codons(dna: str) -> list[str] | None:
        return codons
     return None
     
-#print(split_codons('aaacccgggttt'))
-#print(split_codons("acgt"))
+
 
 def translate_codons(codons: list[str]) -> list[str]:
     """Translate a list of codons (triplets) into their corresponding
@@ -64,7 +63,7 @@ def translate_codons(codons: list[str]) -> list[str]:
     >>> translate_codons(["acg", "ac", "gca"]) is None
     True
 
-    """ 
+    """     
     # FIXME: Implement the function
     y=[]
     output=[]
@@ -81,8 +80,7 @@ def translate_codons(codons: list[str]) -> list[str]:
             return None #"somthing rong with the sequens"
     return output
 
-#print(translate_codons(['tgt', 'tgc', 'tga']))
-#print(translate_codons(["acg", "ac", "gca"]))
+
 
 
 def translate_dna(dna: str) -> str:
@@ -114,6 +112,3 @@ def translate_dna(dna: str) -> str:
 
     return output_string
 
-print(translate_dna('TGTTgCTGA'))
-print(translate_dna('tgttgctga'))
-print(translate_dna('tgtgctg'))
